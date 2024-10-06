@@ -2,7 +2,7 @@
 
 function connectDb() {
     try {
-        $pdo = new PDO('mysql:host=localhost;dbname=urls', 'root', 'Vaibhavi#24');
+        $pdo = new PDO('mysql:host=localhost;dbname=urls', 'root', '');
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         return $pdo;
     } catch (PDOException $e) {
